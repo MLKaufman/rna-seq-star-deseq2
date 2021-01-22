@@ -1,3 +1,7 @@
 sample	condition
-A	untreated
-B	treated
+Ctrl1	Control
+Ctrl2	Control
+Ctrl3	Control
+CTCF1	CTCF
+CTCF2	CTCF
+CTCF3	CTCF

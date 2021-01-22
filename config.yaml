@@ -11,15 +11,15 @@ units: units.tsv
 
 trimming:
   # skip trimming: false or true
-  skip: false
+  skip: true
   # the sequencing adapter
   adapter: ACGGATCGATCGATCGATCGAT
 
 ref:
   # the STAR index
-  index: "path/to/star/index"
+  index: "../index"
   # gtf file with transcripts
-  annotation: "path/to/annotation.gtf"
+  annotation: "../galGal6.ncbiRefSeq.gtf"
 
 pca:
   labels:
@@ -30,10 +30,10 @@ diffexp:
   # contrasts for the deseq2 results method
   contrasts:
     treated-vs-untreated:
-      - treated
-      - untreated
+      - CTCF
+      - Control
 
 params:
   star: ""
   cutadapt-se: ""
-  cutadapt-pe: ""
+  cutadapt-pe: "" #-g AGATCGGAAGAGCACACGTCTGAACTCCAGTCA -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT"
